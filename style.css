@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: rgb(102,197,255);
+    background: linear-gradient(124deg, rgba(102,197,255,1) 0%, rgba(252,70,107,1) 100%);
+    min-height: 100vh;
+    color: black;
+}
+
+header , .todo-form{
+
+    min-height: 20vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.todo-input, .todo-button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border:none;
+    background:white;
+}
+
+/*   color: rgb(157, 43, 180); */
+form button {
+
+    color:rgb(157, 43, 180);
+    background:white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+form button:hover {
+
+    background: rgb(157, 43, 180);
+    color: white;
+}
+
+.todo-list {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 2rem;
+
+}
+
+
+.todo li {
+    list-style-type: none;
+}
+
+.todo {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25vw;
+    margin: 1rem;
+    background-color: white;
+}
+
+
+.todo-item {
+    flex:1;
+    padding:0.3rem;
+}
+
+.completed-button , .trash-button {
+
+    border: none;
+    background:rgba(66, 230, 33, 0.925);
+    color:white;
+    align-self: stretch;
+    font-size: 1.3rem;
+    padding:0.3rem
+}
+
+.trash-button {
+    background:rgb(107, 31, 1)
+}
+
+
+.fa-solid {
+
+    pointer-events: none;
+}
+
+.completed {
+
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.fall {
+
+    transform: translateY(12rem) rotateZ(20deg);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
